@@ -1,10 +1,12 @@
 import React from 'react'
 import './footer.css'
 
-const footer = () => {
+const Footer = () => {
   return (
-    <div>footer</div>
+    <footer className='footer'>
+        Copyright &#169; 2024 Annie Minj. All right received
+    </footer>
   )
 }
 
-export default footer
+export default Footer
