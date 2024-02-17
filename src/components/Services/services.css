@@ -1,0 +1,77 @@
+.services {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.serviceTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+.serviceDescription {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+.serviceBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+.serviceBar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(30,30,30);
+}
+.serviceBarImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+.serviceBarText>p {
+    font-size: 0.75rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 720px){
+    .serviceBarText>p {
+        font-size: 1.75vw;
+    }
+    .serviceTitle {
+        margin-bottom: 1rem;
+    }
+    .serviceBars {
+        margin: 1rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .serviceBarImg {
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1rem;
+    }
+    .serviceDescription {
+        font-size: 0.9rem;
+    }
+    .serviceBarText>p {
+        font-size: 2.5vw;
+    }
+    .serviceBarText>h2 {
+        font-size: 1.2rem;
+    }
+    .serviceTitle {
+        font-size: 2.5rem;
+    }
+}
