@@ -22,9 +22,9 @@
     cursor: pointer;
 }
 .desktopMenuListItem:hover {
-    color: yellow;
+    color: greenyellow;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid greenyellow;
 }
 .desktopMenuBtn {
     border: none;
@@ -34,8 +34,8 @@
     cursor: pointer;
 }
 .active {
-    color: yellow;
-    border-bottom: 3px solid yellow;
+    color: greenyellow;
+    border-bottom: 3px solid greenyellow;
     padding-bottom: 0.5rem ;
 }
 .navMenu {

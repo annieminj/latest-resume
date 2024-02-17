@@ -10,9 +10,9 @@
     position: absolute;
     z-index: -1;
     top: -4rem;
-    right: 0;
+    right: 88px;
     object-fit: cover;
-    height: 100vh;
+    height: 80vh;
     /* max-width: 60vw; */
 }
 .introContent {
@@ -30,7 +30,7 @@
     font-weight: 100;
 }
 .introName {
-    color: yellow;
+    color: greenyellow;;
 }
 .introPara {
     font-size: 1.25rem;
@@ -42,14 +42,24 @@
     padding: 0.5rem 1.5rem;
     border-radius: 2rem;
     font-size: 1.2rem;
+    cursor: pointer;
+    width: 25%;
+    margin-top: 2rem;
 }
 @media screen and (max-width: 840px){
     .bg {
-        right: -10vw;
+        right: 15vw;
     }
 }
 @media screen and (max-width: 480px){
     .bg {
-        right: -80vw;
+        right: 10vw;
+        top: -33vw;
+    }
+    .introText {
+        font-size: 29px;
+    }
+    .introPara {
+        font-size: 0.9rem;
     }
 }
