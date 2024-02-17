@@ -16,14 +16,7 @@ const Skills = () => {
         </span>
         <div className='skillBars'>
             <div className='skillBar'>
-                <img className='skillBarImg' src={UIDesign} alt='UIDesign' />
-                <div className='skillBarText'>
-                    <h2>UI/UX Design</h2>
-                    <p>Designing Web/App interfaces</p>
-                </div>
-            </div>
-            <div className='skillBar'>
-                <img className='skillBarImg' src={WebDesign} alt='WebDesign' />
+                <img className='skillBarImg' src={UIDesign} alt='WebDesign' />
                 <div className='skillBarText'>
                     <h2>Web Development</h2>
                     <p>Web app Development</p>
