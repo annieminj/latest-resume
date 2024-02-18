@@ -1,6 +1,6 @@
 import React from 'react';
 import './services.css';
-import UIDesign from '../../assets/web.jpg';
+import UIDesign from '../../assets/web.png';
 import WebDesign from '../../assets/app.png';
 
 const Services = () => {

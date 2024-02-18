@@ -1,11 +1,11 @@
 import React from 'react'
 import './skills.css'
 import html from '../../assets/html.png'
-import css from '../../assets/css.jpg'
+import css from '../../assets/css.png'
 import javascript from '../../assets/javascript.png'
 import react from '../../assets/react.png'
-import angular from '../../assets/angular.jpg'
-import ionic from '../../assets/ioic.png'
+import angular from '../../assets/agular.png'
+import ionic from '../../assets/ionic.png'
 import Progress_bar from '../../utilities/progress-bar'
 
 const Skills = () => {
