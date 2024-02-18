@@ -15,6 +15,29 @@
     padding-top: 3rem;
     margin-bottom: 1.5rem;
 }
+.skillsSection {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+.active {
+    color: greenyellow;
+    border-bottom: 3px solid greenyellow;
+    padding-bottom: 0.5rem ;
+}
+.skillsProf {
+    display: flex;
+    width: 56%;
+    flex-wrap: wrap;
+}
+.skillsProfSection {
+    padding: 2rem 4rem;
+}
+.skillsSubSection:hover {
+    color: yellowgreen;
+    cursor: pointer;
+}
 .skillsBox {
     width: 100%;
 }
@@ -22,7 +45,7 @@
     font-weight: 400;
     font-size: 1rem;
     max-width: 50rem;
-    padding: 0 2rem;
+    padding: 0 2rem 3.2rem 2rem;
     width: 100%;
     display: flex;
     align-items: center;
