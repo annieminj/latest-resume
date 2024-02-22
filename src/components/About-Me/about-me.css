@@ -21,3 +21,24 @@
     max-width: 50rem;
     padding: 0 2rem;
 }
+.aboutEdu{
+    text-align: left !important;
+    width: 50rem;
+    padding: 2rem;
+}
+.aboutEdu h2 {
+    color: greenyellow;
+    border-bottom: 1px solid greenyellow;
+    width: max-content;
+}
+.aboutEduList {
+    padding: 1rem 0 0 0;
+}
+.aboutYear {
+    color: greenyellow;
+    font-size: 18px;
+    font-weight: 400;
+}
+.aboutDegree{
+
+}
