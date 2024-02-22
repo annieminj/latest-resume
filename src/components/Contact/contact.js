@@ -29,7 +29,7 @@ const Contact = () => {
     
   return (
     <section className='contactPage'>
-        <div className='clients' id='clients'>
+        {/* <div className='clients' id='clients'>
             <h1 className='contactPageTitle'>My Clients</h1>
             <p className='clientDesc'>
                 I have had the opportunity to work with a diverse group of companies. 
@@ -39,7 +39,7 @@ const Contact = () => {
                 <img className='clientImg' src={img1} alt='Clients'/>
                 <img className='clientImg' src={img2} alt='Clients'/>
             </div>
-        </div>
+        </div> */}
         <div className='contact' id='contact'>
             <h1 className='contactPageTitle'>Contact Me</h1>
             <span className='clientDesc'>Please fill out the form below to discuss any work opportunities</span>
