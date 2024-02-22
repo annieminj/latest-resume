@@ -13,7 +13,6 @@ import 'react-circular-progressbar/dist/styles.css';
 
 const Skills = () => {
   const [showProfessional, setShowrofessional] = useState(false);
-  var percentage = "60"
   return (
     <section className='skills' id='skills'>
         <span className='skillsTitle'>My Skills</span>

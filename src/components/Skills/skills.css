@@ -29,7 +29,31 @@
 .skillsProf {
     display: flex;
     width: 56%;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;   
+    animation-name: slideInLeft; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 .skillsProfSection {
     padding: 2rem 4rem;
@@ -49,6 +73,14 @@
     width: 100%;
     display: flex;
     align-items: center;
+    animation: slideInRight 1s ease-in 0s 1 normal none;
+    /* animation-name: slideInRight; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none; */
 }
 .skillImg {
     height: 2rem;
