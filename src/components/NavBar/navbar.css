@@ -28,7 +28,8 @@
 }
 .desktopMenuBtn {
     border: none;
-    background: white;
+    background: greenyellow;
+    font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     cursor: pointer;

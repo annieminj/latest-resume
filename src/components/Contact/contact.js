@@ -4,7 +4,9 @@ import img1 from '../../assets/3.jpeg'
 import img2 from '../../assets/12.jpeg'
 import youtube from '../../assets/14.jpeg';
 import twitter from '../../assets/10.jpeg'
+import linkedin from '../../assets/linkedin.png'
 import insta from '../../assets/5.jpeg'
+import facebook from '../../assets/facebook.png'
 import emailjs from '@emailjs/browser';
 import PropagateLoader from "react-spinners/PropagateLoader";
 
@@ -25,7 +27,16 @@ const Contact = () => {
               console.log(error.text);
               setLoading(false);
           });
-      };
+    };
+
+    const func = (url) => {
+        if (url.startsWith('http') || url.startsWith('https')) {
+          window.open(url);
+        } else {
+          let loc = 'https://' + url;
+          window.open(loc)
+        }
+    }
     
   return (
     <section className='contactPage'>
@@ -50,9 +61,10 @@ const Contact = () => {
                 <button className='submitBtn' type='submit' value='Send' onClick={() => setLoading(true)} style={{display: loading ? 'none' : 'flex'}}>Submit</button>
                 <PropagateLoader color={color} className='loader' loading={loading} style={{display: loading ? 'flex' : 'none'}}/>
                 <div className='links'>
-                    <img src={youtube} alt='icon' className='link'/>
-                    <img src={twitter} alt='icon' className='link'/>
-                    <img src={insta} alt='icon' className='link'/>
+                    <a href='#'  onClick={() => func("https://github.com/annieminj/weather-app")}><img src={twitter} alt='icon' className='link'/></a>
+                    <a href='#'  onClick={() => func("https://www.linkedin.com/in/annie-minj-9b5317104/")}><img src={linkedin} alt='icon' className='link'/></a>
+                    <a href='#'  onClick={() => func("https://github.com/annieminj/weather-app")}><img src={insta} alt='icon' className='link'/></a>
+                    <a href='#'  onClick={() => func("https://github.com/annieminj/weather-app")}><img src={facebook} alt='icon' className='link'/></a>
                 </div>
             </form>
         </div>
