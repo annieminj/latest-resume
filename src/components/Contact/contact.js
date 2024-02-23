@@ -7,8 +7,11 @@ import twitter from '../../assets/10.jpeg'
 import linkedin from '../../assets/linkedin.png'
 import insta from '../../assets/5.jpeg'
 import facebook from '../../assets/facebook.png'
+import email from '../../assets/email.png'
+import call from '../../assets/call.png'
 import emailjs from '@emailjs/browser';
 import PropagateLoader from "react-spinners/PropagateLoader";
+
 
 const Contact = () => {
     const form = useRef();  
@@ -53,6 +56,16 @@ const Contact = () => {
         </div> */}
         <div className='contact' id='contact'>
             <h1 className='contactPageTitle'>Contact Me</h1>
+            <div className='contactno'>
+                <span className='contactnodiv'>
+                    <img src={email} alt='' className='contactImg'/>
+                    <span>annie.minj06@gmail.com</span>
+                </span>
+                <span className='contactnodiv'>
+                    <img src={call} alt='' className='contactImg'/>
+                    <span>+91 8918489994</span>
+                </span>
+            </div>
             <span className='clientDesc'>Please fill out the form below to discuss any work opportunities</span>
             <form className='contactForm' ref={form} onSubmit={sendEmail}>
                 <input className='name' type='text' placeholder='Your Name' name='from_name'/>
@@ -61,12 +74,12 @@ const Contact = () => {
                 <button className='submitBtn' type='submit' value='Send' onClick={() => setLoading(true)} style={{display: loading ? 'none' : 'flex'}}>Submit</button>
                 <PropagateLoader color={color} className='loader' loading={loading} style={{display: loading ? 'flex' : 'none'}}/>
                 <div className='links'>
-                    <a href='#'  onClick={() => func("https://github.com/annieminj/weather-app")}><img src={twitter} alt='icon' className='link'/></a>
+                    {/* <a href='#'  onClick={() => func("https://github.com/annieminj/weather-app")}><img src={twitter} alt='icon' className='link'/></a> */}
                     <a href='#'  onClick={() => func("https://www.linkedin.com/in/annie-minj-9b5317104/")}><img src={linkedin} alt='icon' className='link'/></a>
-                    <a href='#'  onClick={() => func("https://github.com/annieminj/weather-app")}><img src={insta} alt='icon' className='link'/></a>
-                    <a href='#'  onClick={() => func("https://github.com/annieminj/weather-app")}><img src={facebook} alt='icon' className='link'/></a>
+                    <a href='#'  onClick={() => func("https://www.instagram.com/____a_n_n_i_e_?igsh=MXhyZXVlaXVzd3h1cQ==")}><img src={insta} alt='icon' className='link'/></a>
+                    <a href='#'  onClick={() => func("https://www.facebook.com/annie.minj?mibextid=ZbWKwL")}><img src={facebook} alt='icon' className='link'/></a>
                 </div>
-            </form>
+            </form>  
         </div>
     </section>
   )
